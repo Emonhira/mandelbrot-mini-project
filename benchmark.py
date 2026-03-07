@@ -3,7 +3,7 @@ from naive_mandelbrot import mandelbrot_naive
 from numpy_mandelbrot import mandelbrot_numpy
 from numba_mandelbrot import mandelbrot_numba
 
-sizes = [200, 500, 1000]
+sizes = [200, 500, 1000, 1500, 2000]
 max_iter = 100
 
 for size in sizes:
