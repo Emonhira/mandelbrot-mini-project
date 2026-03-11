@@ -1,3 +1,15 @@
+2026-03-11 7d0d9e2 timings updated
+
+ mandelbrot_timing.csv | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+2026-03-11 7eee5ee zip created
+
+ SourceCode_Abdullah.zip | Bin 0 -> 1514 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+2026-03-11 4897018 git log created
+
+ git_log.txt | 93 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 93 insertions(+)
 2026-03-11 30cc0da updated with timing table
 
  mandelbrot_timing.csv | 5 +++++
