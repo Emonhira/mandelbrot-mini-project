@@ -25,6 +25,13 @@ for res in resolutions:
     t_numba = time.time() - s
     
     benchmarks.append([res, t_naive, t_numpy, t_numba])
+    
+    
+    
+import pandas as pd
+df = pd.DataFrame(benchmarks, columns=['Res', 'Naive', 'NumPy', 'Numba'])
+df.to_csv('mandelbrot_timing.csv', index=False)
+print(df)
 
 import matplotlib.pyplot as plt
 
