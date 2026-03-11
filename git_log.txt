@@ -1,0 +1,93 @@
+2026-03-11 30cc0da updated with timing table
+
+ mandelbrot_timing.csv | 5 +++++
+ 1 file changed, 5 insertions(+)
+2026-03-11 7a1d4d2 added the benchmarks
+
+ __pycache__/naive_mandelbrot.cpython-313.pyc | Bin 938 -> 0 bytes
+ __pycache__/numba_mandelbrot.cpython-313.pyc | Bin 998 -> 0 bytes
+ __pycache__/numpy_mandelbrot.cpython-313.pyc | Bin 1102 -> 0 bytes
+ analysis.py                                  |   7 +++++++
+ 4 files changed, 7 insertions(+)
+2026-03-11 3a531aa updated
+
+ __pycache__/all_Implementation.cpython-313.pyc | Bin 0 -> 3384 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+2026-03-11 1c267ac visualization updated
+
+ analysis.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+2026-03-11 44caec9 visualization part added
+
+ analysis.py | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+2026-03-11 c4236b5 analysis added
+
+ analysis.py | 30 ++++++++++++++++++++++++++++++
+ 1 file changed, 30 insertions(+)
+2026-03-11 2376a43 analysis file created
+
+ analysis.py | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+2026-03-11 29d01c4 added numba
+
+ all_Implementation.py | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+2026-03-11 80d9fa7 added numpy
+
+ all_Implementation.py | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+2026-03-11 4ba9738 added the naive
+
+ all_Implementation.py | 26 ++++++++++++++++++++++++++
+ 1 file changed, 26 insertions(+)
+2026-03-11 1662e08 trying new way
+
+ benchmark.py        | 30 ------------------------------
+ naive_mandelbrot.py | 29 -----------------------------
+ numba_mandelbrot.py | 31 -------------------------------
+ numpy_mandelbrot.py | 27 ---------------------------
+ 4 files changed, 117 deletions(-)
+2026-03-11 09aafa6 added new file having all the method in a single file
+
+ all_Implementation.py | 0
+ naive_mandelbrot.py   | 2 +-
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+2026-03-07 724ecdb increased sizes
+
+ benchmark.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+2026-03-07 1b29a5e program run
+
+ __pycache__/naive_mandelbrot.cpython-313.pyc | Bin 0 -> 938 bytes
+ __pycache__/numba_mandelbrot.cpython-313.pyc | Bin 0 -> 998 bytes
+ __pycache__/numpy_mandelbrot.cpython-313.pyc | Bin 0 -> 1102 bytes
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+2026-03-07 1056b5c Added performance benchmarking script
+
+ benchmark.py | 30 ++++++++++++++++++++++++++++++
+ 1 file changed, 30 insertions(+)
+2026-03-07 bcb134b Add Numba JIT compiled Mandelbrot implementation
+
+ numba_mandelbrot.py | 31 +++++++++++++++++++++++++++++++
+ 1 file changed, 31 insertions(+)
+2026-03-07 cacd662 Add NumPy vectorized Mandelbrot implementation
+
+ numpy_mandelbrot.py | 27 +++++++++++++++++++++++++++
+ 1 file changed, 27 insertions(+)
+2026-03-07 9078c12 Implement naive Mandelbrot using pure Python loops
+
+ naive_mandelbrot.py | 29 +++++++++++++++++++++++++++++
+ 1 file changed, 29 insertions(+)
+2026-03-07 5a59e4b files created
+
+ mandelbrot.py => benchmark.py |   0
+ naive_mandelbrot.py           |   0
+ numba_mandelbrot.py           |   0
+ numpy_mandelbrot.py           |   0
+ requirements.txt              | Bin 0 -> 1786 bytes
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+2026-03-03 36c4d7d Initial project structure
+
+ mandelbrot.py | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
