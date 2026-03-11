@@ -24,3 +24,20 @@ def mandelbrot_naive(width, height):
                 iteration += 1
             result[i, j] = iteration / MAX_ITER 
     return result
+
+# 2. NumPy Implementation (Vectorized) 
+def mandelbrot_numpy(width, height):
+    x = np.linspace(X_MIN, X_MAX, width)
+    y = np.linspace(Y_MIN, Y_MAX, height)
+    X, Y = np.meshgrid(x, y)
+    C = X + 1j * Y
+    Z = np.zeros(C.shape, dtype=complex)
+    M = np.full(C.shape, MAX_ITER, dtype=float)
+    
+    for i in range(MAX_ITER):
+        mask = np.abs(Z) <= 2
+        Z[mask] = Z[mask]**2 + C[mask]
+        escaped = (np.abs(Z) > 2) & (M == MAX_ITER)
+        M[escaped] = i
+        
+    return M / MAX_ITER
