@@ -41,3 +41,23 @@ def mandelbrot_numpy(width, height):
         M[escaped] = i
         
     return M / MAX_ITER
+
+# 3. Numba Implementation (JIT Compiled)
+@jit(nopython=True)
+def mandelbrot_numba_core(width, height, x_vals, y_vals):
+    result = np.zeros((height, width))
+    for i in range(height):
+        for j in range(width):
+            c = complex(x_vals[j], y_vals[i])
+            z = 0j
+            iteration = 0
+            while abs(z) <= 2 and iteration < MAX_ITER:
+                z = z**2 + c
+                iteration += 1
+            result[i, j] = iteration / MAX_ITER
+    return result
+
+def mandelbrot_numba(width, height):
+    x_vals = np.linspace(X_MIN, X_MAX, width)
+    y_vals = np.linspace(Y_MIN, Y_MAX, height)
+    return mandelbrot_numba_core(width, height, x_vals, y_vals)
