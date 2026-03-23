@@ -6,7 +6,7 @@ from numba import jit
 # Project Constants
 X_MIN, X_MAX = -2.0, 1.0
 Y_MIN, Y_MAX = -1.5, 1.5
-MAX_ITER = 100
+MAX_ITER = 150
 
 # 1. Naive Implementation (Nested Loops) 
 def mandelbrot_naive(width, height):
